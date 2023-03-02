@@ -1,0 +1,28 @@
+$backGround-color: #000000;
+$color: red;
+$link-color: white;
+
+#header {
+  background-color: $backGround-color;
+  min-height: 10vh;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  .logo {
+    text-align: center;
+    color: $color;
+  }
+  nav {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+  a {
+    color: $link-color;
+    text-decoration: none;
+    &:hover {
+      color: $color;
+      text-decoration: underline;
+    }
+  }
+}

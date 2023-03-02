@@ -1,0 +1,18 @@
+$backGround-color: #000000;
+$color: red;
+$link-color: white;
+
+#footer {
+  min-height: 15vh;
+  background-color: $backGround-color;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  a {
+    text-decoration: none;
+    color: $link-color;
+    &:hover {
+      color: $color;
+    }
+  }
+}

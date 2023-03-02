@@ -1,0 +1,35 @@
+@use "header";
+@use "footer";
+
+$backGround-color: #000000;
+$color: red;
+
+#main {
+  display: grid;
+  grid-template-columns: auto;
+  place-items: start;
+  min-height: 80vh;
+
+  .main-container {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr;
+  }
+  .main-title {
+    color: $color;
+    text-align: center;
+  }
+  .main-card {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: antiquewhite;
+    grid-template-rows: 1fr;
+  }
+
+  .main-image {
+    width: 100%;
+
+    object-fit: cover;
+  }
+}
